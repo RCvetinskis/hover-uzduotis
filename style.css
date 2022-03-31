@@ -1,0 +1,88 @@
+body {
+    background-color: black;
+  
+}
+nav {
+    margin-top: 200px;
+    height: 200px;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.534);
+    transition: color 0.3;
+    
+}
+a:hover 
+{    transition-delay: 0.3s;
+    color: white;
+}
+
+.home a {
+    position: relative;
+}
+
+
+.home a::before {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 25%;
+    content: "";
+    color: red;
+   background: red;
+   transition: 0.1s; 
+   opacity: 0;  
+  
+}
+a:hover::before {
+    background-color: red;
+    opacity: 1;
+    transform:scaleX(1)  translateZ(1) ;
+    transition-delay: 0.3s;
+    transition: 0.3s;
+
+}
+/* .home a:hover::after {
+    background-color: red;
+    opacity: 0.5;
+    transform: scale(2, 10);
+    transition-delay: 0.2s;
+
+ 
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+/* .home::before {position: absolute;
+    top: 21%;
+    left: 48%;
+    width: 30px;
+    height: 30px;
+    content: "";
+    color: black;
+   background: black;
+   transition: 0.3s;
+   opacity: 0;
+
+   
+}
+.home:hover {
+    background-color: red;
+    transform: translateX(20px);   
+    opacity: 1;
+} */
